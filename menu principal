@@ -5,5 +5,20 @@ def mostrar_menu():
     print("2. Mostrar alumnos")
     print("3. Mostrar alumnos APROBADOS y REPROBADOS")
     print("4. Salir del programa")
+while True:
+    mostrar_menu()
+    opcion = input("\nSeleccione una opcion:").strip()
+
+    if opcion == "1":
+        ingresar_alumno()
+    elif opcion =="2":
+        listar_alumnos()
+    elif opcion =="3":
+        aprobados_reprobados()
+    elif opcion == "4":
+        print("Saliendo del programa.")
+        break
+    else:
+        print("Opcion invalida. Por favor seleccione una opcion válida.")
 
 #menu principal 
