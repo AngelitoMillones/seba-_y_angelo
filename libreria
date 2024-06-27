@@ -1,4 +1,3 @@
-
 alumnos = []
 aprobados=[]
 reprobados=[]
@@ -15,11 +14,11 @@ def ingresar_alumno():
         "Artes Visuales",
         "Ciencias Naturales",
         "Educacion Fisica y Salud"
-        # "Historia Geografia y Ciencias Sociales",
-        # "Ingles",
-        # "Lenguaje y Comunicacion",
-        # "Matematicas",
-        # "Musica"
+        "Historia Geografia y Ciencias Sociales",
+        "Ingles",
+        "Lenguaje y Comunicacion",
+        "Matematicas",
+        "Musica"
     ]
 
     for asignatura in asignaturas:
@@ -46,17 +45,4 @@ def ingresar_alumno():
 
     alumnos.append(alumno)
     #Evaluación de asistencia
-    while True:
-        try:
-            asistencia = float(input("Ingrese el porcentaje de asistencia del alumno: "))
-            if 0 <= asistencia <= 100:
-                if asistencia <= 69:
-                    print(f"{nombre_completo} no pasa el curso debido a baja asistencia.")
-                else:
-                    print(f"{nombre_completo} pasa el curso.")
-                break
-            else:
-                print("La asistencia debe estar entre 0 y 100. Intentelo de nuevo.")
-        except ValueError:
-            print("Entrada invalida. Por favor ingrese un numero.")
-    print("Alumno ingresado correctamente.\n")
+ 
