@@ -1,0 +1,9 @@
+from libreria20 import *
+def mostrar_menu():
+    print("\nMENU Colegio Angelitos")
+    print("1. Agregar alumno")
+    print("2. Mostrar alumnos")
+    print("3. Mostrar alumnos APROBADOS y REPROBADOS")
+    print("4. Salir del programa")
+
+#menu principal 
